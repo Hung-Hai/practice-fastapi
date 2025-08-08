@@ -6,9 +6,9 @@ from src.utils.db_utils import Base
 from src.models.mixin import TimestampMixin
 
 class BorrowStatus(PythonEnum):
-    CHECKOUT = "checkout"
-    RETURNED = "returned"
-    OVERDUE = "overdue"
+    CHECKOUT = "CHECKOUT"
+    RETURNED = "RETURNED"
+    OVERDUE = "OVERDUE"
 
 class BorrowModel(Base, TimestampMixin):
     __tablename__ = "borrow"

@@ -7,9 +7,9 @@ from src.dto.timemixin import TimestampMixin
 from uuid import UUID, uuid4
 
 class BorrowStatusDTO(str, Enum):
-    CHECKOUT = "checkout"
-    RETURNED = "returned"
-    OVERDUE = "overdue"
+    CHECKOUT = "CHECKOUT"
+    RETURNED = "RETURNED"
+    OVERDUE = "OVERDUE"
 
 class BorrowCreateDTO(BaseModel):
     id: UUID = Field(default_factory=uuid4)
